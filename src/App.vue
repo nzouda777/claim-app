@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="mx-auto  md:max-w-screen-2xl overflow-hidden">
+    
+  <Nav />
+    <div class="md:grid md:grid-cols-2 md:gap-32 gap-16 flex flex-col flex-col-reverse">
+      <ItemLeft />
+      <ItemRight />
+    </div>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Nav from './components/Nav.vue'
+import ItemLeft from './components/ItemLeft.vue'
+import ItemRight from './components/ItemRight.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    ItemLeft,
+    ItemRight
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
