@@ -7,11 +7,11 @@
           <h5 class="text-lg">Mode de Reclamation</h5>
             <div class="flex space-between gap-6 items-center mt-5">
               <div class="flex">
-                <input type="radio" @click="refMode" v-model="byRef"  name="mode" id="" >
+                <input type="checkbox" @click="refMode" v-model="byRef"  name="modeRef" id="" >
                 <span class="ml-2">Reference de la Transation</span>
               </div>
               <div class="flex">
-                <input type="radio" @click="numMode" v-model="byNum" name="mode" id="">
+                <input type="checkbox" @click="numMode" v-model="byNum" name="modeNum" id="">
                 <span class="ml-2">Moyen de Paiment</span>
               </div>
             </div>
